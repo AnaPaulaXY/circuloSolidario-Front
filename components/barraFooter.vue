@@ -26,6 +26,10 @@ export default {
 </script>
 
 <style>
+  footer{
+	background-color: #ffbb94;
+	padding: 25px;
+}
  .text-sm-center {
     text-align: center !important;
   }

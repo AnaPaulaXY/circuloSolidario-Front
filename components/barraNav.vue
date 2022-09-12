@@ -18,13 +18,8 @@
             <a class="nav-link" aria-current="page" href="#informacoes"
               >Mais informações</a
             >
-            <!-- <NuxtLink v-bind:to="`/${chaveNotificacao}`" ><img class="icone-links" src="../static/home.png" alt=""></NuxtLink>-->
-            <a class="nav-link" aria-current="page" href="home.html"
-              ><img class="icone-links" src="../static/home.png" alt=""
-            /></a>
-            <a class="nav-link" aria-current="page" href="perfil_doador.html"
-              ><img class="icone-links" src="../static/perfil.png" alt=""
-            /></a>
+            <NuxtLink v-bind:to="`/${chaveNotificacoes}`"><img class="icone-links" src="../static/home.png" alt=""></NuxtLink>
+            <NuxtLink v-bind:to="`/${chaveCadastroD}`"><img class="icone-links" src="../static/perfil.png" alt=""></NuxtLink>
           </div>
         </div>
       </nav>
@@ -37,7 +32,8 @@ export default {
   name: 'barraNavPage',
   data(){
     return{
-      chaveNotificacoes: "doacoes-recebidas"
+      chaveNotificacoes: "doacoes-recebidas",
+      chaveCadastroD: "cadastroDoador"
     }
   }
 }
@@ -55,7 +51,7 @@ export default {
   color: #0d6efd;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out;
+  border-color 0.15s ease-in-out;
 }
 .d-flex {
   display: flex !important;
