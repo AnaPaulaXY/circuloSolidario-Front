@@ -64,7 +64,7 @@ export default {
 
   methods: {
     cadastrar({ $axios }) {
-      this.$axios.post('/recebeDoador', {
+      this.$axios.post('/doador', {
         nome: this.form.nome,
         email: this.form.email,
         senha: this.form.senha,
