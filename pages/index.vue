@@ -11,8 +11,9 @@
               <NuxtLink v-bind:to="`/${chaveBusca}`">Buscar</NuxtLink>
             </form>
           </div>
-          <div class="col-3 pb-0 pt-3 btn-success fs-5">
-            <a href="#" class="dropdown-item">Sua localização atual</a>
+          <div class="col-3 pb-0 pt-3 btn-success fs-5 dropdown-item">
+            <NuxtLink v-bind:to="`/${chaveLogin}`">Sua localização atual</NuxtLink>
+            <!-- <a href="#" class="">Sua localização atual</a> -->
           </div>
         </div>
         <iframe
@@ -34,6 +35,7 @@ export default {
   data() {
     return {
       chaveBusca: 'instituicao',
+      chaveLogin: 'login',
     }
   },
 }
